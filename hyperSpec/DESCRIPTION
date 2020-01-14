@@ -3,11 +3,11 @@ Encoding: UTF-8
 Type: Package
 Title: Work with Hyperspectral Data, i.e. Spectra + Meta Information (Spatial,
     Time, Concentration, ...)
-Version: 0.99-20180627
-Date: 2018-06-27
-Maintainer: Claudia Beleites <chemometrie@beleites.de>
+Version: 0.99-20200114
+Date: 2020-01-14
+Maintainer: Claudia Beleites <Claudia.Beleites@chemometrix.gmbh>
 Authors@R: c(
-    person("Claudia",   "Beleites",  role = c("aut","cre", "dtc"), email = "chemometrie@beleites.de"),
+    person("Claudia",   "Beleites",  role = c("aut","cre", "dtc"), email = "Claudia.Beleites@chemometrix.gmbh"),
     person("Valter",    "Sergo",     role = c("aut")),
     person("Alois",     "Bonifacio", role = c ("ctb", "dtc")),
     person("Marcel",    "Dahms",     role = "ctb"),
@@ -32,7 +32,7 @@ License: GPL (>= 3)
 LazyLoad: yes
 LazyData: yes
 Depends:
-    R (>= 2.15),
+    R (>= 3.6.0),
     lattice,
     grid,
     ggplot2 (>= 2.2.0)
@@ -54,15 +54,17 @@ Suggests:
     digest,
     reshape,
     devtools,
-    R.rsp
+    R.rsp,
+    tibble
 Imports:
     testthat,
     methods,
     utils,
     latticeExtra,
     lazyeval,
-    XML
-URL: http://hyperSpec.r-forge.r-project.org/
+    XML,
+    dplyr
+URL: https://github.com/cbeleites/hyperSpec
 BugReports: https://github.com/cbeleites/hyperSpec/issues
 VignetteBuilder: R.rsp
 Collate: 
@@ -130,10 +132,12 @@ Collate:
     'qplotmixmap.R'
     'quantile.R'
     'rbind.fill.R'
-    'read.ENVI.Nicolet.R'
     'read.ENVI.R'
+    'read.ENVI.HySpex.R'
+    'read.ENVI.Nicolet.R'
     'read.txt.Witec.R'
     'read.asc.Andor.R'
+    'read.asc.PerkinElmer.R'
     'read.ini.R'
     'read.jdx.R'
     'read.mat.Cytospec.R'
@@ -173,4 +177,4 @@ Collate:
     'write.txt.wide.R'
     'y-pastenames.R'
     'zzz.R'
-RoxygenNote: 6.0.1
+RoxygenNote: 7.0.2

@@ -542,3 +542,6 @@ Vignettes/fileio/txt.Witec/nofilename[[:space:]](Y-Axis).txt filter=lfs diff=lfs
 Vignettes/fileio/jcamp-dx/IR_S_1.DX filter=lfs diff=lfs merge=lfs -text
 Vignettes/fileio/spc/wplanes.spc filter=lfs diff=lfs merge=lfs -text
 Vignettes/fileio/spc/wplanes.txt filter=lfs diff=lfs merge=lfs -text
+Vignettes/fileio/ENVI/HySpexNIR.hdr filter=lfs diff=lfs merge=lfs -text
+Vignettes/fileio/ENVI/HySpexNIR.hyspex filter=lfs diff=lfs merge=lfs -text
+Vignettes/fileio/jcamp-dx/GMD_20111121_MDN35_ALK_JCAMP-shortened.txt filter=lfs diff=lfs merge=lfs -text
